@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
+using WPFTreeView.Direct;
 
 namespace WPFTreeView
 {
@@ -28,7 +29,7 @@ namespace WPFTreeView
                 return null;
 
             // Get the name of the file/folder
-            var name = MainWindow.GetFileFolderName(path);
+            var name = DirectoryStructure.GetFileFolderName(path);
 
             // By default, we presume an image
             var image = "Images/file.png";
@@ -49,3 +50,4 @@ namespace WPFTreeView
         }
     }
 }
+    
