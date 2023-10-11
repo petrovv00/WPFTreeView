@@ -87,5 +87,6 @@ namespace WPFTreeView.Direct
                 return path.Substring(lastIndex + 1);
             }
             #endregion
+
         }
 }

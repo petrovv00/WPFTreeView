@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using WPFTreeView.Direct.ViewModels;
 
 namespace WPFTreeView
 {
@@ -16,7 +17,7 @@ namespace WPFTreeView
         {
             InitializeComponent();
 
-            this.DataContext = new Class1();
+            this.DataContext = new DirectoryStructureViewModel();
         }
 
         #endregion
